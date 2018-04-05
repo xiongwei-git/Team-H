@@ -13,10 +13,10 @@ contract Payroll is Ownable{
 
     uint constant payDuration = 10 seconds;
 
-    address self;
+    address public self;
     uint totalSalary;
     uint totalEmployee;
-    address[] employeeList;
+    address[] public employeeList;
 
     mapping(address => Employee) public employees;
 

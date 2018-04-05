@@ -2,7 +2,7 @@
 // var Ownable = artifacts.require("./Ownable.sol");
 // var SafeMath = artifacts.require("./SafeMath.sol");
 //var Payroll = artifacts.require("./Payroll.sol");
-var ArrayCaller = artifacts.require("./ArrayCaller.sol");
+var Attacker = artifacts.require("./Attacker.sol");
 
 module.exports = function(deployer) {
   //deployer.deploy(SimpleStorage);
@@ -11,5 +11,5 @@ module.exports = function(deployer) {
   // deployer.link(Ownable,Payroll);
   // deployer.link(SafeMath,Payroll);
   //deployer.deploy(Payroll);
-  deployer.deploy(ArrayCaller);
+  deployer.deploy(Attacker);
 };
